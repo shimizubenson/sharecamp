@@ -35,7 +35,8 @@ Things you may want to cover:
 
 https://sharecamp-38211.herokuapp.com/
 
-#　テスト用アカウント
+
+# テスト用アカウント
 
 ・　Basic認証パスワード: 1783
 ・　Basic認証ID: benson
@@ -44,7 +45,8 @@ https://sharecamp-38211.herokuapp.com/
 
 https://docs.google.com/spreadsheets/d/1nrDZG2-9uV56XzJBQZsYD6NXtj9Eau-IIzREBGZ3kos/edit#gid=982722306
 
-#　実装予定の機能
+
+# 実装予定の機能
 
 現在、トップページのViewを作成中。
 今後は管理者機能を実装して、管理者のみ、出品、編集、削除機能が行えるように実装予定。
