@@ -51,6 +51,10 @@ https://docs.google.com/spreadsheets/d/1nrDZG2-9uV56XzJBQZsYD6NXtj9Eau-IIzREBGZ3
 現在、トップページのViewを作成中。
 今後は管理者機能を実装して、管理者のみ、出品、編集、削除機能が行えるように実装予定。
 
+
+# データベース設計
+[![Image from Gyazo](https://i.gyazo.com/e0138d086a50d7eb1bc8fbb0660fe1f7.jpg)](https://gyazo.com/e0138d086a50d7eb1bc8fbb0660fe1f7)
+
 # ローカルでの動作方法
 
 % git clone https://github.com/shimizubenson/sharecamp
