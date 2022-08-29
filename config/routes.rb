@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'items/index'
   devise_for :admins, controllers: {
     sessions:      'admins/sessions',
     passwords:     'admins/passwords',
@@ -9,4 +10,5 @@ Rails.application.routes.draw do
     passwords:     'users/passwords',
     registrations: 'users/registrations'
   }
+  root to: "items#index"
 end
