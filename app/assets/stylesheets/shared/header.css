@@ -96,12 +96,22 @@
 
 .login {
   text-decoration: none;
-  line-height: 32px;
-  margin-right: 3vw;
-  color: #333333;
+  color: #fff;
+  background: #447248;
+  border: 1px solid #447248;
+  line-height: 48px;
+  font-size: 14px;
+  border-radius: 25px;
+  padding:15px 40px;
 }
 
 .sign-up {
   text-decoration: none;
-  color: #333333;
+  color: #fff;
+  background: #447248;
+  border: 1px solid #447248;
+  line-height: 48px;
+  font-size: 14px;
+  border-radius: 25px;
+  padding:15px 40px;
 }
