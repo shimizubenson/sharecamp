@@ -3,14 +3,17 @@ a {
 }
 
 .main {
-  background: #f8f8f8;
-  padding-top: 120px;
+  background: #edecd7d8;
+  padding-top: 90px;
 }
 
 /* 画面上部の「人生を変えるフリマアプリ」帯部分 */
+
+
 .title-contents {
   width: 100vw;
-  background-image: image-url('furima-header01.png');
+  height: 700px;
+  background-image: image-url('camp-main01.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
@@ -32,25 +35,11 @@ a {
   line-height: 40px;
 }
 
-.store-btn {
-  display: flex;
-  margin-top: 24px;
-}
-
-.apple-btn {
-  margin-right: 1vw;
-  height: 9vh;
-}
-
-.google-btn {
-  height: 9vh;
-}
-
 /* //画面上部の「人生を変えるフリマアプリ」帯部分 */
 
 /* FURIMAが選ばれる3つの理由部分 */
 .select-reason-contents {
-  padding: 5vh 15vw;
+  padding: 10vh 15vw;
 }
 
 .select-reason-contents>.title {
@@ -121,49 +110,6 @@ a {
 
 /* //FURIMAが選ばれる3つの理由部分 */
 
-
-/* 画面中央の「会員数日本一位」帯部分*/
-.ad-contents {
-  width: 100vw;
-  background-image: image-url('furima-header02.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top center;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  padding: 5vh 15vw;
-  color: #fff;
-  text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
-}
-
-.ad-title {
-  font-size: 5vh;
-  margin-bottom: 2vh;
-}
-
-.ad-explain {
-  font-size: 2.5vh;
-  line-height: 30px;
-}
-
-.store-btn {
-  display: flex;
-  margin-top: 24px;
-}
-
-.apple-btn {
-  margin-right: 1vw;
-  height: 9vh;
-}
-
-.google-btn {
-  height: 9vh;
-}
-
-/* //画面中央の「会員数日本一位」帯部分 */
-
 /* FURIMAの特徴 */
 .feature-contents {
   padding: 5vh 15vw;
@@ -217,7 +163,7 @@ a {
 /* 商品一覧 */
 
 .item-contents {
-  background-color: #FFF;
+  background-color: #edecd7d8;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -228,13 +174,16 @@ a {
   font-size: 5vh;
   line-height: 1.4;
   font-weight: bold;
+  color: #43745e;
+  font-family: 'Chalkboard',sans-serif;
+  
 }
 
 .item-contents>.subtitle {
   font-size: 3vh;
   margin: 1vh 0;
   text-decoration: none;
-  color: #3ccace;
+  color: #43745e;
   font-weight: bold;
 }
 

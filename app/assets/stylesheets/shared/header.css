@@ -4,80 +4,58 @@
 
 .top-page-header {
   width: 100vw;
-  padding: 2vh 15vw;
   display: flex;
-  flex-direction: column;
   position: fixed;
-  height: 120px;
-  background-color: #fff;
+  z-index: 1;
+  height: 90px;
+  background-color:rgba(255,255,255,0.8);
+  align-items: center;
 }
 
 .search-bar-contents {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 
-.furima-icon {
-  width: 10vw;
-  margin-right: 10vw;
+.sharecamp-icon {
+  width: 20vw;
 }
 
 .search-form {
-  width: 65vw;
+  width: 25vw;
   height: 5vh;
   display: flex;
-  margin-bottom: 5px;
 }
 
 .search-form>.input-box {
   width: 100%;
   height: 5vh;
   padding-left: 10px;
+  border: 1px solid #43745e;
+  border-radius: 10px 0 0 10px;
 }
 
 .search-button {
   width: 5vh;
   border: 0;
   cursor: pointer;
-  background-color: #3ccace;
-  padding: 8px;
+  background-color: #43745e;
+  padding: 10px;
+  border-radius: 0 10px 10px 0;
 }
 
 .search-icon {
   width: 100%;
 }
 
-.nav {
+.lists-right {
   font-size: 18px;
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  width: 100%;
-  padding: 1vh 0;
-}
-
-.lists-left {
-  display: flex;
-  min-width: 200px;
-
-}
-
-.category-list {
-  text-decoration: none;
-  margin-right: 3vw;
-  color: #333333;
-}
-
-.brand-list {
-  text-decoration: none;
-  color: #333333;
-}
-
-.lists-right {
-  display: flex;
   list-style: none;
-  align-items: flex-end;
+  align-items: center;
+  margin-left: 30vw;
+  font-weight: bold;
 }
 
 
@@ -97,21 +75,23 @@
 .login {
   text-decoration: none;
   color: #fff;
-  background: #447248;
-  border: 1px solid #447248;
+  background: #43745e;
+  border: 1px solid #43745e;
   line-height: 48px;
   font-size: 14px;
   border-radius: 25px;
   padding:15px 40px;
+  margin-right: 10px;
 }
 
 .sign-up {
   text-decoration: none;
   color: #fff;
-  background: #447248;
-  border: 1px solid #447248;
+  background: #43745e;
+  border: 1px solid #43745e;
   line-height: 48px;
   font-size: 14px;
+  font-weight: bold;
   border-radius: 25px;
   padding:15px 40px;
 }
