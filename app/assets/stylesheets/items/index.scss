@@ -39,126 +39,101 @@ a {
 
 /* FURIMAが選ばれる3つの理由部分 */
 .select-reason-contents {
-  padding: 10vh 15vw;
+  padding: 10vh;
+  background-color:#edecd7d8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.select-reason-contents>.title {
+.howtouse {
+  background-color: #e3e0cfd8;
+  width:90vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 0;
+  border-radius: 15px;
+}
+
+.howtouse>.title {
   text-align: center;
-  font-size: 3.5vh;
+  font-size: 5vh;
   font-weight: bold;
-  margin-bottom: 5vh;
+  margin-bottom: 4vh;
   position: relative;
+  color: #43745e;
+  font-family: 'Chalkboard',sans-serif;
 }
 
-.select-reason-contents>.title::after {
+.howtouse>.title::after {
   content: '';
-  width: 70px;
+  width: 270px;
   height: 4px;
-  background-color: #3ccace;
+  background-color: #43745e;
   position: absolute;
   bottom: -10px;
   left: 50%;
   transform: translateX(-50%);
+  border-radius: 2px;
 }
 
 .reason-lists {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
+  width: 90vw;
+  height: 25vh;
+  margin: 30px 0 30px 0;
 }
 
 .reason-lists>.list {
-  width: 33vh;
+  width: 50vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
+  font-weight: bold;
+  background-color: #fff;
+  border-radius: 30px;
 }
 
-.list-pict {
-  margin-bottom: 20px;
-  width: 100%;
-}
-
-.reason-list-number {
+.list-pict1 {
   position: absolute;
-  top: 0;
+  top: -50px;
   left: 0;
-  width: 60px;
-  height: 60px;
-  font-size: 30px;
+  width: 100px;
+  height: 100px;
   text-align: center;
   line-height: 60px;
-  background-color: #3ccace;
-  color: #fff;
+}
+
+.list-pict2 {
+  position: absolute;
+  top: 140px;
+  left: 290px;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  line-height: 60px;
 }
 
 .reason-list-text {
   font-weight: bold;
   font-size: 24px;
   line-height: 50px;
+  text-align: center;
+  padding-top: 30px;
 }
 
-.reason-list-blue-text {
-  color: #3ccace;
+.reason-list-green-text {
+  color: #43745e;
 }
 
 .reason-list-description {
   font-size: 18px;
-  margin-top: 20px;
+  margin: 20px;
 }
-
-/* //FURIMAが選ばれる3つの理由部分 */
-
-/* FURIMAの特徴 */
-.feature-contents {
-  padding: 5vh 15vw;
-}
-
-.feature-contents>.title {
-  text-align: center;
-  font-size: 3.5vh;
-  font-weight: bold;
-  margin-bottom: 5vh;
-  position: relative;
-}
-
-.feature-contents>.title::after {
-  content: '';
-  width: 70px;
-  height: 4px;
-  background-color: #3ccace;
-  position: absolute;
-  bottom: -10px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.feature-lists {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.feature-lists>.list {
-  width: 33vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.feature-list-text {
-  font-weight: bold;
-  font-size: 22px;
-  line-height: 50px;
-}
-
-.feature-list-description {
-  font-size: 18px;
-  margin-top: 20px;
-}
-
-/* //FURIMAの特徴 */
 
 /* 商品一覧 */
 
@@ -170,34 +145,52 @@ a {
   padding: 10vh 0;
 }
 
-.item-contents>.title {
+.pickup {
+  background-color: #e3e0cfd8;
+  width:80vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0;
+  border-radius: 15px;
+}
+
+.pickup>.title {
   font-size: 5vh;
   line-height: 1.4;
   font-weight: bold;
   color: #43745e;
+  position: relative;
   font-family: 'Chalkboard',sans-serif;
-  
 }
 
-.item-contents>.subtitle {
-  font-size: 3vh;
-  margin: 1vh 0;
-  text-decoration: none;
-  color: #43745e;
-  font-weight: bold;
+.pickup>.title::after {
+  content: '';
+  width: 370px;
+  height: 4px;
+  background-color: #43745e;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 2px;
 }
 
 .item-lists {
-  width: 100vw;
+  width: 70vw;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-top: 50px;
+
 }
 
 .item-lists>.list {
-  width: 37vh;
-  padding: 1vw;
+  width: 38vh;
+  padding: 35px;
   background-color: #FFF;
+  border-radius: 10px;
+  margin-left: 40px;
 }
 
 
@@ -206,8 +199,8 @@ a {
 }
 
 .item-img {
-  width: 33vh;
-  height: 33vh;
+  width: 230px;
+  height: 230px;
 }
 
 .sold-out {
