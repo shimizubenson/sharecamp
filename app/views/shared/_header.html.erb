@@ -8,7 +8,7 @@
         <%= image_tag "search.png", class:"search-icon" %>
       </button>
     </form>
-    
+
     <ul class='lists-right'>
     <% if user_signed_in? %>
        <li><%= link_to "#{current_user.nickname}", root_path, class: "user-nickname" %></li> 

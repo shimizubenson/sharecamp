@@ -12,15 +12,17 @@
   align-items: center;
 }
 
-.search-bar-contents {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
 .sharecamp-icon {
   width: 20vw;
 }
+
+.search-bar-contents {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
 
 .search-form {
   width: 25vw;
@@ -36,6 +38,7 @@
   border-radius: 10px 0 0 10px;
 }
 
+
 .search-button {
   width: 5vh;
   border: 0;
@@ -50,48 +53,50 @@
 }
 
 .lists-right {
-  font-size: 18px;
+  font-size: 14px;
   display: flex;
   list-style: none;
   align-items: center;
   margin-left: 30vw;
   font-weight: bold;
+  height: 20px;
 }
 
 
 .user-nickname {
+  font-size: 16px;
   text-decoration: none;
-  margin-right: 3vw;
   color: #333333;
-  font-weight: bold;
+  background: #edecd7d8;
+  border: 1px solid #43745e;
+  border-radius: 25px;
+  padding:14px 40px;
+  margin-right: 10px;
 }
 
 
 .logout {
-  text-decoration: none;
-  color: #333333;
-}
-
-.login {
-  text-decoration: none;
   color: #fff;
   background: #43745e;
   border: 1px solid #43745e;
-  line-height: 48px;
-  font-size: 14px;
+  border-radius: 25px;
+  padding:15px 40px;
+}
+
+.login {
+  color: #fff;
+  background: #43745e;
+  border: 1px solid #43745e;
   border-radius: 25px;
   padding:15px 40px;
   margin-right: 10px;
 }
 
 .sign-up {
-  text-decoration: none;
   color: #fff;
   background: #43745e;
   border: 1px solid #43745e;
-  line-height: 48px;
-  font-size: 14px;
-  font-weight: bold;
   border-radius: 25px;
   padding:15px 40px;
+  
 }
