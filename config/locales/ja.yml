@@ -8,3 +8,13 @@ ja:
         last_name_kana: 苗字（カナ）
         first_name_kana: 名前（カナ）
         birthday: 生年月日
+  activerecord:
+    attributes:
+      item:
+        name: 商品名
+        image: 画像
+        description: 商品の説明
+        category_id: カテゴリー
+        day_to_ship_id: 発送までの日数
+        price: 販売価格
+        
