@@ -3,7 +3,6 @@
 
 .ad-footer-contents {
   width: 100vw;
-  background-image: image-url('');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
@@ -50,6 +49,7 @@
   font-size: 18px;
   font-weight: bold;
   margin-bottom: 10px;
+  display: flex;
 }
 
 .footer-link {

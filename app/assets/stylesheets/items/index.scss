@@ -27,11 +27,12 @@ a {
 }
 
 .service-title {
-  font-size: 8vh;
+  font-size: 7vh;
+  font-weight: bold;
 }
 
 .service-explain {
-  font-size: 2.5vh;
+  font-size: 2.6vh;
   line-height: 40px;
 }
 
@@ -208,7 +209,7 @@ a {
   top: 40%;
   width: 100%;
   text-align: center;
-  background-color: crimson;
+  background-color: #C53535;
   transform: skewY(-10deg);
 }
 
