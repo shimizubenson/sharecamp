@@ -8,6 +8,11 @@ class ItemsController < ApplicationController
 
   def new
     @item = Item.new
+    if  current_user.admin == false
+      redirect_to root_path
+    else
+      render :new
+    end
   end
 
   def create
