@@ -25,8 +25,7 @@ Things you may want to cover:
 
 # アプケーション名
 
-シャアキャン
-
+シャアキャンプ
 # アプリケーション概要
 
 キャンプ用品をシェア購入し、道具を揃えられることで、手軽にキャンプをすることができる
@@ -121,6 +120,7 @@ https://docs.google.com/spreadsheets/d/1nrDZG2-9uV56XzJBQZsYD6NXtj9Eau-IIzREBGZ3
 | address       | string    | null: false                  |
 | building_name | string    |                              |
 | phone_number  | string    | null: false                  |
+| rental_days_id| integer   | null: false                  |
 | rental        | references|null:false , foreign_key: true|
 
 ### Association
