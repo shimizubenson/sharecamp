@@ -1,4 +1,4 @@
-lass RentalDays < ActiveHash::Base
+class RentalDays < ActiveHash::Base
   self.data = [
     { id: 1, name: '---' },
     { id: 2, name: '3泊4日' },

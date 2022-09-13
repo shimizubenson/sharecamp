@@ -1,12 +1,18 @@
 class RentalsController < ApplicationController
-  before_action :authenticate_user!, except: :index
+  before_action :authenticate_user!
+  before_action :set_item, only: [:index, :create]
+
   def index
+    @rental_order_information = RentalOrderInformation.new
+    if current_user.id == @item.user_id  
+      redirect_to root_path
+    end
   end
 
   def create
-    @rental_order_infomation = RentalOrderInfomation.new(rental_params)
-    if @rental_order_infomation.valid?
-      @rental_order_infomation.save
+    @rental_order_information = RentalOrderInformation.new(rental_params)
+    if @rental_order_information.valid?
+      @rental_order_information.save
       redirect_to root_path
     else
       render "rentals/index"
@@ -16,9 +22,11 @@ class RentalsController < ApplicationController
   private
 
   def rental_params
-    params.require(:rental_order_infomation).permit(:post_code, :region, :city, :address, :building_name, :phone_number,:rental_days).merge(item_id: params[:item_id],user_id: current_user.id)
+    params.require(:rental_order_information).permit(:post_code, :region_id, :city, :address, :building_name, :phone_number,:rental_days_id).merge(item_id: params[:item_id],user_id: current_user.id)
   end
 
-  
+  def set_item
+    @item = Item.find(params[:item_id])
+  end
 
 end
