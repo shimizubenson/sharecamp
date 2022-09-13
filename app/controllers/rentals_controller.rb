@@ -4,19 +4,21 @@ class RentalsController < ApplicationController
   end
 
   def create
-    @rental = Rental.create(rental_params)
-    order_information.create(order_information_params)
-    redirect_to root_path
+    @rental_order_infomation = RentalOrderInfomation.new(rental_params)
+    if @rental_order_infomation.valid?
+      @rental_order_infomation.save
+      redirect_to root_path
+    else
+      render "rentals/index"
+    end
   end
 
   private
 
   def rental_params
-    params.permit(:price).merge(user_id: current_user.id)
+    params.require(:rental_order_infomation).permit(:post_code, :region, :city, :address, :building_name, :phone_number,:rental_days).merge(item_id: params[:item_id],user_id: current_user.id)
   end
 
-  def address_params
-    params.permit(:postal_code, :prefecture, :city, :house_number, :building_name).merge(donation_id: @donation.id)
-  end
+  
 
 end
