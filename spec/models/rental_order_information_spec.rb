@@ -10,7 +10,7 @@ RSpec.describe RentalOrderInformation, type: :model do
     end
 
     context '内容に問題ない場合' do
-      it 'post_codeとregion_idとcityとaddressとphone_numberとrental_days_idが存在すれば登録できる' do
+      it 'post_codeとregion_idとcityとaddressとphone_numberとrental_days_idとtokenが存在すれば登録できる' do
         expect(@rental_order_information).to be_valid
       end
 
@@ -91,6 +91,12 @@ RSpec.describe RentalOrderInformation, type: :model do
         @rental_order_information.item_id = nil
         @rental_order_information.valid?
         expect(@rental_order_information.errors.full_messages).to include("Itemを入力してください")
+      end
+
+      it "tokenが空では登録できないこと" do
+        @rental_order_information.token = nil
+        @rental_order_information.valid?
+        expect(@rental_order_information.errors.full_messages).to include("クレジットカード情報を入力してください")
       end
     end
   end

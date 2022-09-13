@@ -1,9 +1,9 @@
 class RentalOrderInformation
   include ActiveModel::Model
-  attr_accessor :post_code,:region_id,:city,:address,:building_name,:phone_number,:rental_days_id,:item_id,:user_id
+  attr_accessor :post_code,:region_id,:city,:address,:building_name,:phone_number,:rental_days_id,:item_id,:user_id,:token
 
   with_options presence: true do
-   validates :city,:address,:user_id,:item_id
+   validates :city,:address,:user_id,:item_id,:token
    validates :post_code, format: {with: /\A[0-9]{3}-[0-9]{4}\z/, message: "にハイフォン（-）を入力してください"}
    validates :region_id, numericality: { other_than: 1, message: "を入力してください" }
    validates :rental_days_id, numericality: { other_than: 1, message: "を入力してください" } 

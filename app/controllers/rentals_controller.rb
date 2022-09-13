@@ -12,6 +12,7 @@ class RentalsController < ApplicationController
   def create
     @rental_order_information = RentalOrderInformation.new(rental_params)
     if @rental_order_information.valid?
+      pay_item
       @rental_order_information.save
       redirect_to root_path
     else
@@ -22,7 +23,16 @@ class RentalsController < ApplicationController
   private
 
   def rental_params
-    params.require(:rental_order_information).permit(:post_code, :region_id, :city, :address, :building_name, :phone_number,:rental_days_id).merge(item_id: params[:item_id],user_id: current_user.id)
+    params.require(:rental_order_information).permit(:post_code, :region_id, :city, :address, :building_name, :phone_number,:rental_days_id).merge(item_id: params[:item_id],user_id: current_user.id,token: params[:token])
+  end
+
+  def pay_item
+    Payjp.api_key = ENV["PAYJP_SECRET_KEY"]
+    Payjp::Charge.create(
+      amount: @item.price,
+      card: rental_params[:token],
+      currency: 'jpy'
+    )
   end
 
   def set_item
