@@ -1,4 +1,4 @@
-@user = User.create!(
+User.create!(
   nickname: ENV['SECRET_NICKNAME'],
   first_name: '山田',
   last_name: '太郎',

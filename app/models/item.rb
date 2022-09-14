@@ -8,5 +8,6 @@ class Item < ApplicationRecord
   belongs_to :user
   belongs_to :category
   belongs_to :day_to_ship
+  has_one :rental
   has_one_attached :image
 end
