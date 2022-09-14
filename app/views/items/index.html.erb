@@ -99,6 +99,26 @@
   </div>
   <%# /商品一覧 %>
   </div>
+    <div class='sdgs'>
+      <div class='sdgs-main'>
+        <h2 class='sdgs-title'>
+           SDGsの取り組み
+           </h2>
+           <div class='sdgs-rogo'>
+         <%= image_tag "sdg_icon_12_ja_2.png", size: '150x150',class:"sdgs-pict1" %>
+             <div class='sdgs-text'>目標12「作る責任・使う責任のために私たちのできること」<p>
+              不用品として処分されるものを繰り返し使うリユースをし、ゴミの削減につながる取り組み
+              </div>
+           </div>
+            <div class='sdgs-rogo'>
+         <%= image_tag "sdg_icon_15_ja_2.png", size: '150x150',class:"sdgs-pict1" %>
+             <div class='sdgs-text'>目標15「陸の豊かさのために私たちのできること」
+               <p>不要になったものでも、すぐに捨てるのではなく再活用することでリデュースに</p><p>つながる取り組み</p>
+              </div>
+           </div>
+           
+      </div>
+    </div>
 </div>
 <% if user_signed_in? %>
   <% if current_user == @user || current_user.admin? %>
