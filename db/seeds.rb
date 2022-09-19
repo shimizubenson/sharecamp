@@ -8,6 +8,6 @@ test_user_1 = User.create(
   password: "ENV['SECRET_PASSWORD']",
   password_confirmation: "ENV['SECRET_PASSWORD_CONFIRMATION']",
   birthday: '1986-03-05',
-  admin: '1'
+  admin: 'true'
 )
 
